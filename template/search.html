@@ -1,0 +1,14 @@
+<b>Location</b>
+<br/>
+<input type="text" class="address" ng-model="address" ng-keypress="keyPress($event)">
+<br/>
+<input type="submit" class="find" value="Find" ng-click="codeAddress()">
+<input type="submit" class="save" value="Save" ng-click="saveAddress()">
+<br>
+<b>Saved</b>
+<br/>
+<div class = "favs" data-ng-repeat="place in places track by $index">
+<div class="left"><input type="submit" class="place" value="{{place.text}}" ng-click="searchAddress(place.text)"></div>
+<div class="middle"/>
+<div class="right"><input type="submit" class="remove" value="Remove" ng-click="removeAddress(place.text)"></div>
+</div>

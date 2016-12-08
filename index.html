@@ -1,0 +1,26 @@
+<html data-ng-app="map" data-ng-controller="mapController" data-ng-init="construct()">
+	<head>
+		<title>Google Map</title>
+		<style>
+			[ng\:cloak], [ng-cloak], .ng-cloak {
+				display: none;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	</head>
+
+	<body>
+
+		<div class="whole" >
+			<div id="map" class="map"></div>
+			<div class="search" data-ng-controller="mapController">
+				<map-directive></map-directive>
+			</div>
+		</div>
+	
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="js/map.js"></script>
+		
+	</body>
+</html>
